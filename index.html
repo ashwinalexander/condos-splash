@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Condos.com</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link defer rel="stylesheet" href="css/normalize.css" />
+    <link defer rel="stylesheet" href="css/main.css" />
+    <link defer rel="stylesheet" href="css/custom.css" />
+    <link defer rel="stylesheet" href="https://use.typekit.net/wxn4pgc.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineMax.min.js"></script>
+
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style type="text/css">
+      #mc_embed_signup {
+        background: #fff;
+        clear: left;
+        font: 14px Helvetica, Arial, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Add your site or application content here -->
+
+    <div class="top_sub_navigation"></div>
+    <div class="navigation">
+      <a class="logo_holder" href="/">
+        <img
+          src="./img/condos_hauskey.svg"
+          alt=""
+          width="300"
+          class="condos_logo"
+        />
+      </a>
+      <div class="top_right_nav">
+        <a onclick="lcsShowChat(1); return false">
+          <img src="" alt="" />
+          <span>Live Chat</span>
+        </a>
+        <a href="#contact" id="btnContactUs">Contact Us</a>
+        <a href="#login" id="btnLogin">Login</a>
+      </div>
+      <div class="menus-container">
+        <span class="menu-trigger">
+          <i class="menu-trigger-bar top"></i>
+          <i class="menu-trigger-bar middle"></i>
+          <i class="menu-trigger-bar bottom"></i>
+        </span>
+        <span class="close-trigger">
+          <i class="close-trigger-bar left"></i>
+          <i class="close-trigger-bar right"></i>
+        </span>
+
+        <div class="inner-container">
+          <i class="menu-bg top"></i>
+          <i class="menu-bg middle"></i>
+          <i class="menu-bg bottom"></i>
+          <div class="menu-container">
+            <ul class="menu">
+              <li>
+                <a href="#login" id="btnLoginMobile">Request Invite</a>
+              </li>
+              <li>
+                <a href="#login" id="btnLoginMobile"
+                  >Developers <br />
+                  &amp; Brokers</a
+                >
+              </li>
+              <li>
+                <a href="#contact" id="btnContactUsMobile">Contact Us</a>
+              </li>
+              <li>
+                <a href="#login" id="btnLoginMobile">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main_mkt_area">
+      <h1>
+        Buy Pre-Construction & New Condos <br />Directly From Developers,
+        Online.
+      </h1>
+      <a id="requestPreLaunchInvitation" class="main_cta"
+        >Request PRE-LAUNCH Invitation</a
+      >
+      <p>Launching June 2021</p>
+    </div>
+    <div class="secondary_mkt_areas">
+      <div class="mkt mkt_online_purchase">
+        <h4>Online Purchase</h4>
+        <h3>Buy your next<br />condo online</h3>
+        <img src="/img/process_gph.png" alt="" width="166" />
+      </div>
+      <div class="mkt mkt_cash_rebates">
+        <img src="/img/rebat_gph.png" alt="" width="198" />
+        <!-- <h4>Cash Rebates</h4> -->
+        <h3>Online process<br />means saving money</h3>
+      </div>
+      <div class="mkt mkt_investor_tools">
+        <!-- <h4>Buy Condos Like a Pro</h4> -->
+        <h3>Investor tools &<br />fractional sales</h3>
+        <img src="/img/investor_tools_gph.png" alt="" width="135" />
+      </div>
+    </div>
+    <div class="bottom_cta_area">
+      <div class="condo_referral_area">
+        <div class="referral_image">
+          <img src="/img/condologo.png" alt="" class="" width="222" />
+        </div>
+        <div class="condo_referral_text">
+          <h5>Looking for move-in ready, MLS listings?</h5>
+          <p>Search 1000’s of resale listings on our sister-site Condo.com.</p>
+          <a href="https://www.condo.com" target="_blank">Visit Condo.com</a>
+        </div>
+      </div>
+      <div class="condo_referral_area">
+        <div class="referral_image">
+          <img src="/img/condos.com_07.png" alt="" class="" width="111" />
+        </div>
+        <div class="developer_referral_text">
+          <h5>Are you a developer or a broker?</h5>
+          <p>
+            Let us help you sell more units. We are broker-friendly and have
+            free tools to help you close more pre & new construction sales.
+          </p>
+          <a href="#developer" id="requestDeveloperContact">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      ® Copyright 2021 Hauskey US LLC - All Rights Reserved
+      <a id="requestContact" href="#contactus">Contact us</a>
+    </div>
+
+    <div id="mailChimpModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="close" style="z-index: 10000" id="mailChimpModalClose">
+          &times;
+        </div>
+        <br />
+
+        <div id="mc_embed_signup">
+          <div id="success-message">
+            <h5>
+              <div
+                id="mce-success-response-status"
+                style="margin-top: 100px"
+              ></div>
+              <div
+                id="mce-error-response-status"
+                style="margin-bottom: 100px"
+              ></div>
+            </h5>
+          </div>
+
+          <form
+            action="https://condos.us1.list-manage.com/subscribe/post?u=6ad5df5298762321769c173f8&amp;id=cc05738a4f"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            target="_blank"
+            novalidate
+          >
+            <div id="mc_embed_signup_scroll">
+              <h2>Request Invitation</h2>
+              <div class="indicates-required">
+                <span class="asterisk">*</span> indicates required
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL"
+                  >Email Address <span class="asterisk">*</span>
+                </label>
+                <input
+                  type="email"
+                  value=""
+                  name="EMAIL"
+                  class="required email"
+                  id="mce-EMAIL"
+                />
+              </div>
+
+              <div class="mc-field-group">
+                <label for="mce-FNAME"
+                  >First Name <span class="asterisk">*</span>
+                </label>
+                <input
+                  type="text"
+                  value=""
+                  name="FNAME"
+                  class="required"
+                  id="mce-FNAME"
+                />
+              </div>
+
+              <div class="mc-field-group">
+                <label for="mce-LNAME"
+                  >Last Name <span class="asterisk">*</span>
+                </label>
+                <input
+                  type="text"
+                  value=""
+                  name="LNAME"
+                  class="required"
+                  id="mce-LNAME"
+                />
+              </div>
+
+              <div class="mc-field-group size1of2">
+                <label for="mce-PHONE"
+                  >Phone Number <span class="asterisk">*</span>
+                </label>
+                <input
+                  type="text"
+                  name="PHONE"
+                  class="required"
+                  value=""
+                  id="mce-PHONE"
+                />
+              </div>
+
+              <div id="mce-responses" class="clear">
+                <div
+                  class="response"
+                  id="mce-error-response"
+                  style="display: none"
+                ></div>
+                <div
+                  class="response"
+                  id="mce-success-response"
+                  style="display: none"
+                ></div>
+              </div>
+
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
+                <input
+                  type="text"
+                  name="b_6ad5df5298762321769c173f8_cc05738a4f"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
+              <div class="clear">
+                <input
+                  type="submit"
+                  value="Subscribe"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  class="button"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+    <script>
+      window.__lc = window.__lc || {};
+      window.__lc.license = 12700089;
+      (function (n, t, c) {
+        function i(n) {
+          return e._h ? e._h.apply(null, n) : e._q.push(n);
+        }
+        var e = {
+          _q: [],
+          _h: null,
+          _v: "2.0",
+          on: function () {
+            i(["on", c.call(arguments)]);
+          },
+          once: function () {
+            i(["once", c.call(arguments)]);
+          },
+          off: function () {
+            i(["off", c.call(arguments)]);
+          },
+          get: function () {
+            if (!e._h)
+              throw new Error(
+                "[LiveChatWidget] You can't use getters before load."
+              );
+            return i(["get", c.call(arguments)]);
+          },
+          call: function () {
+            i(["call", c.call(arguments)]);
+          },
+          init: function () {
+            var n = t.createElement("script");
+            (n.async = !0),
+              (n.type = "text/javascript"),
+              (n.src = "https://cdn.livechatinc.com/tracking.js"),
+              t.head.appendChild(n);
+          },
+        };
+        !n.__lc.asyncInit && e.init(),
+          (n.LiveChatWidget = n.LiveChatWidget || e);
+      })(window, document, [].slice);
+    </script>
+    <noscript
+      ><a href="https://www.livechatinc.com/chat-with/12700089/" rel="nofollow"
+        >Chat with us</a
+      >, powered by
+      <a
+        href="https://www.livechatinc.com/?welcome"
+        rel="noopener nofollow"
+        target="_blank"
+        >LiveChat</a
+      ></noscript
+    >
+    <!-- End of LiveChat code -->
+
+    <script>
+      var modal = document.getElementById("mailChimpModal");
+      var requestPreLaunchInvitation = document.getElementById(
+        "requestPreLaunchInvitation"
+      );
+      var requestContact = document.getElementById("requestContact");
+      var requestDeveloperContact = document.getElementById(
+        "requestDeveloperContact"
+      );
+      var btnContactUs = document.getElementById("btnContactUs");
+
+      var btnContactUsMobile = document.getElementById("btnContactUsMobile");
+      var btnLoginMobile = document.getElementById("btnLoginMobile");
+
+      var btnLogin = document.getElementById("btnLogin");
+      // var btnArticleContactUs = document.getElementById("btnArticleContactUs");
+      var modalClose = document.getElementById("mailChimpModalClose");
+
+      function showMailChimpModal() {
+        $("#mc-embedded-subscribe-form").show(); // Hide the initial form
+        $("#success-message").hide();
+        $("#mce-success-response-status").html("");
+        $("#mce-error-response-status").html("");
+
+        $("#mce-success-response-status").hide();
+        $("#mce-error-response-status").hide();
+
+        modal.style.display = "block";
+      }
+      function hideMailChimpModal() {
+        console.log("hide mailchimp", modal);
+        modal.style.display = "none";
+      }
+
+      function lcsShowChat(idx) {
+        showMailChimpModal();
+      }
+      requestPreLaunchInvitation.onclick = showMailChimpModal;
+      btnLogin.onclick = showMailChimpModal;
+      btnLoginMobile.onclick = showMailChimpModal;
+      btnContactUs.onclick = showMailChimpModal;
+      btnContactUsMobile.onclick = showMailChimpModal;
+
+      // btnArticleContactUs.onclick = showMailChimpModal;
+
+      requestContact.onclick = showMailChimpModal;
+      requestDeveloperContact.onclick = showMailChimpModal;
+      // btnLogin.onclick = showMailChimpModal;
+      btnContactUs.onclick = showMailChimpModal;
+      // btnArticleContactUs.onclick = showMailChimpModal;
+
+      modalClose.onclick = hideMailChimpModal;
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      $(document).ready(function () {
+        $("#mc-embedded-subscribe-form").submit(function (e) {
+          e.preventDefault(); // Prevent a new window from opening upon clicking 'Subscribe now' button
+
+          var validForm = true; // Set initial state of valid form to true
+          var inputArray = $(this).find("input.required"); // Find all required inputs and store them in array
+
+          // Simple check for all inputs to make sure the value is not empty
+          inputArray.each(function (item) {
+            if ($(this).val() == "") {
+              validForm = false;
+              $(".mc_embed_signup .error-message").show(); // if empty, show error message
+              $(".mc_embed_signup input.required").addClass("error"); // and highlight empty inputs
+            }
+          });
+
+          // Everything checks out! Continue...
+          if (validForm == true) {
+            var formContainer = $(".mc_embed_signup");
+            var formData = $(this).serialize(); // Format all info and get it ready for sendoff
+
+            // AJAX magic coming up...
+            $.ajax({
+              type: $(this).attr("method"),
+              url: $(this).attr("action"),
+              data: formData,
+              cache: false,
+              dataType: "json",
+              contentType: "application/json; charset=utf-8",
+              encode: true,
+              error: function (err) {
+                // alert("error");
+                console.log("Uh, oh. There was an error:", err); // You broke something...
+                // hideMailChimpModal();
+              },
+              success: function (data) {
+                // alert("success");
+                console.log("Success! Here is the data:", data); // Yay!
+                $("#mc-embedded-subscribe-form").hide(); // Hide the initial form
+                $("#mce-success-response-status").html(
+                  "<center><h2 style='color:green'>" +
+                    $("#mce-success-response").html() +
+                    "</h2></center>"
+                );
+                $("#mce-error-response-status").html(
+                  "<center><h5 style='color:green'>" +
+                    $("#mce-error-response").html() +
+                    "</h5></center>"
+                );
+
+                // $("#mce-success-response-status").html( $("#mce-success-response").html() )
+                // $("#mce-error-response-status").html( $("#mce-error-response").html() )
+                $("#mce-success-response-status").show();
+                $("#mce-error-response-status").show();
+
+                $("#success-message").show(); // Show the checkmark
+
+                // hideMailChimpModal();
+              },
+            }) // All done! Let's show the user a success message:
+              .done(function (data) {
+                // alert(123);
+                $("#mc-embedded-subscribe-form").hide(); // Hide the initial form
+                $("#mce-success-response-status").html(
+                  "<center><h2 style='color:green'>" +
+                    $("#mce-success-response").html() +
+                    "</h2></center>"
+                );
+                $("#mce-error-response-status").html(
+                  "<center><h5 style='color:green'>" +
+                    $("#mce-error-response").html() +
+                    "</h5></center>"
+                );
+                $("#mce-success-response-status").show();
+                $("#mce-error-response-status").show();
+
+                $("#success-message").show(); // Show the checkmark
+                // $("svg").addClass("active"); // Start animation of checkmark
+                // hideMailChimpModal();
+                // alert(123);
+              });
+          }
+
+          return; // No go on form...
+        }); // end of submit function
+      });
+    </script>
+    <script
+      type="text/javascript"
+      src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+    ></script>
+    <script type="text/javascript">
+      (function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = "EMAIL";
+        ftypes[0] = "email";
+        fnames[1] = "FNAME";
+        ftypes[1] = "text";
+        fnames[2] = "LNAME";
+        ftypes[2] = "text";
+        fnames[3] = "ADDRESS";
+        ftypes[3] = "address";
+        fnames[4] = "PHONE";
+        ftypes[4] = "phone";
+      })(jQuery);
+      var $mcj = jQuery.noConflict(true);
+    </script>
+  </body>
+</html>
