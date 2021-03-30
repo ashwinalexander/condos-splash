@@ -57,12 +57,12 @@
         />
       </a>
       <div class="top_right_nav">
-        <a onclick="lcsShowChat(1); return false">
+        <!-- <a onclick="lcsShowChat(1); return false">
           <img src="" alt="" />
           <span>Live Chat</span>
-        </a>
+        </a> -->
         <a href="#contact" id="btnContactUs">Contact Us</a>
-        <a href="#login" id="btnLogin">Login</a>
+        <!-- <a href="#login" id="btnLogin">Login</a> -->
       </div>
       <div class="menus-container">
         <span class="menu-trigger">
@@ -93,9 +93,9 @@
               <li>
                 <a href="#contact" id="btnContactUsMobile">Contact Us</a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="#login" id="btnLoginMobile">Login</a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -367,9 +367,10 @@
       var btnContactUs = document.getElementById("btnContactUs");
 
       var btnContactUsMobile = document.getElementById("btnContactUsMobile");
-      var btnLoginMobile = document.getElementById("btnLoginMobile");
 
-      var btnLogin = document.getElementById("btnLogin");
+      // var btnLoginMobile = document.getElementById("btnLoginMobile");
+      // var btnLogin = document.getElementById("btnLogin");
+
       // var btnArticleContactUs = document.getElementById("btnArticleContactUs");
       var modalClose = document.getElementById("mailChimpModalClose");
 
@@ -393,8 +394,8 @@
         showMailChimpModal();
       }
       requestPreLaunchInvitation.onclick = showMailChimpModal;
-      btnLogin.onclick = showMailChimpModal;
-      btnLoginMobile.onclick = showMailChimpModal;
+      // btnLogin.onclick = showMailChimpModal;
+      // btnLoginMobile.onclick = showMailChimpModal;
       btnContactUs.onclick = showMailChimpModal;
       btnContactUsMobile.onclick = showMailChimpModal;
 

@@ -11,14 +11,14 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-   html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-    font-family: canada-type-gibson, sans-serif;
-  }
-  
-  /*
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: canada-type-gibson, sans-serif;
+}
+
+/*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301
    *
@@ -27,383 +27,385 @@
    *
    * Customize the background color to match your design.
    */
-  
-  ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-  }
-  
-  ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-  }
-  
-  /*
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
    * A better looking default horizontal rule
    */
-  
-  hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-  }
-  
-  /*
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
    * Remove the gap between audio, canvas, iframes,
    * images, videos and the bottom of their containers:
    * https://github.com/h5bp/html5-boilerplate/issues/440
    */
-  
-  audio,
-  canvas,
-  iframe,
-  img,
-  svg,
-  video {
-    vertical-align: middle;
-  }
-  
-  /*
-   * Remove default fieldset styles.
-   */
-  
-  fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /*
-   * Allow only vertical resizing of textareas.
-   */
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  /* ==========================================================================
-     Author's custom styles
-     ========================================================================== */
-  
-  .navigation {
-    padding: 18px 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    
-  }
-  
-  .top_sub_navigation {
-  
-    height: 33px;
-    background-color: #0ea0ec;
-    
-  }
-  
-  .main_mkt_area {
-    background: #54b4e8;
-    background: linear-gradient(161deg, #0ea0ec,#95defb);
-    background-image: url('/img/Group\ 5.jpg');
-    background-size: cover;
-    min-height: 658px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .main_mkt_area h1 {
-    font-family: canada-type-gibson,sans-serif;
-    font-weight: 500;
-    font-style: italic;
-    font-size: 3.1rem;
-    line-height: 1.2;
-    text-align: center;
-  }
-  
-  
-  .top_right_nav {
-    display: flex;
-    align-items: center;
-  }
-  
-  .top_right_nav a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    color: #1b3773;
-    margin-left: 26px;
-    font-size: 0.96rem;
-  }
-  
-  .top_right_nav a:last-child {box-shadow: 1px 2px 3px #3333334d;padding: 10px 20px 6px 20px;border-radius: 27px;border: 1px solid #f2f2f2;}
-  
-  .top_right_nav {
-    display: flex;
-    align-items: center;
-  }
-  
-  .top_right_nav a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    color: #1b3773;
-    margin-left: 26px;
-    font-size: 0.96rem;
-  }
-  
-  .top_right_nav a:last-child {box-shadow: 1px 2px 3px #3333334d;padding: 10px 20px 6px 20px;border-radius: 27px;border: 1px solid #f2f2f2;}
-  
-  a.main_cta {
-    background: white;
-    padding: 13px 24px;
-    border-radius: 7px;
-    color: #1b3773;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-    margin-top: 16px;
-  }
-  
-  .main_mkt_area p {
-    color: #0d679a;
-  }
-  
-  .secondary_mkt_areas {
-    display: flex;
-    width: 100%;
-    box-sizing: border-box;
-    justify-content: space-evenly;
-    margin-top: 22px;
-  }
-  
-  .mkt.mkt_online_purchase {
-    background-image: url('/img/condos.com_03.jpg');
-    background-size: cover;
-    /* min-height: 400px; */
-  }
-  
-  .mkt.mkt_online_purchase img {
-    position: absolute;
-    right: 20px;
-  }
-  
-  .mkt.mkt_cash_rebates img {
-    /* position: absolute; */
-    right: 20px;
-  }
-  
-  .mkt.mkt_investor_tools img {
-    position: absolute;
-    right: 20px;
-  }
-  
-  .mkt.mkt_cash_rebates img {
-    /* position: absolute;
-    right: 20px; */
-  }
-  
-  .mkt.mkt_cash_rebates {
-    background-image: url('/img/rebate_background@2x.jpg');
-    background-size: cover;
-  
-  }
-  
-  .mkt.mkt_investor_tools {
-    background-image: url('/img/investor_background.jpg');
-    background-size: cover;
-  
-  }
-  
-  .mkt.mkt_cash_rebates img {
-    margin-bottom: 25px;
-  }
-  
-  .mkt {
-    flex-basis: 31%;
-    background: #55b6e9;
-    height: 278px;
-    border-radius: 8px;
-    box-sizing: border-box;
-    padding: 12px 36px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    /* margin-bottom: 41px; */
-    position: relative;
-    margin-bottom: 15px;
-  }
-  
-  .mkt h4 {
-    padding: 0;
-    margin: 0;
-    background: #33333396;
-    display: inline-block !important;
-    width: auto !important;
-    align-self: self-end;
-    padding: 6px 20px 4px 20px;
-    border-radius: 4px;
-    color: white;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1.4px;
-    font-size: 1rem;
-  }
-  
-  .mkt h3 {
-    line-height: 1.2;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 1.9rem;
-    margin: 0;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    color: white;
-  }
-  
-  .bottom_cta_area {
-    display: flex;
-    justify-content: center;
-    padding-top: 45px;
-    justify-content: space-evenly;
-  }
-  
-  .condo_referral_area {
-    flex-basis: 40%;
-  }
-  
-  .condo_referral_text {
-    /* flex-basis: 31%; */
-  }
-  
-  .developer_referral_text {
-    /* flex-basis: 31%; */
-  }
-  
-  .condo_referral_area {
-    display: flex;
-  }
-  
-  .condo_referral_area img {/* height: auto !important; *//* height: 62px !important; */margin-right: 20px;}
-  
-  .condo_referral_text h5 {
-    margin: 0;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-  
-  .condo_referral_text p {}
-  
-  .developer_referral_text h5 {
-    margin: 0;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-  
-  .developer_referral_text p {
-    margin: 0;
-  }
-  
-  .developer_referral_text a, .condo_referral_text a {
-    margin-top: 8px;
-    display: inline-block;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: #0053b5;
-    border-bottom: 1px solid #afafaf;
-  }
-  
-  .condo_referral_text h5 {}
-  
-  .condo_referral_text p {
-    margin: 0;
-  }
-  
-  .footer {
-    padding: 10px;
-    font-size: 0.8rem;
-    color: #9a9a9a;
-  }
-  
-  div#mailChimpModal  #mc_embed_signup h2 {
-    font-family: canada-type-gibson,sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 2.7rem;
-    line-height: 1.2;
-    text-align: left;
-    color: #006da6;
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
 }
 
+/*
+   * Remove default fieldset styles.
+   */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+   * Allow only vertical resizing of textareas.
+   */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+
+.navigation {
+  padding: 18px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.top_sub_navigation {
+  height: 33px;
+  background-color: #0ea0ec;
+}
+
+.main_mkt_area {
+  background: #54b4e8;
+  background: linear-gradient(161deg, #0ea0ec, #95defb);
+  background-image: url("/img/Group\ 5.jpg");
+  background-size: cover;
+  min-height: 658px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_mkt_area h1 {
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 3.1rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.top_right_nav {
+  display: flex;
+  align-items: center;
+}
+
+.top_right_nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  color: #1b3773;
+  margin-left: 26px;
+  font-size: 0.96rem;
+}
+/*   
+  .top_right_nav a:last-child {box-shadow: 1px 2px 3px #3333334d;padding: 10px 20px 6px 20px;border-radius: 27px;border: 1px solid #f2f2f2;}
+   */
+.top_right_nav {
+  display: flex;
+  align-items: center;
+}
+
+.top_right_nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  color: #1b3773;
+  margin-left: 26px;
+  font-size: 0.96rem;
+}
+
+/* .top_right_nav a:last-child {box-shadow: 1px 2px 3px #3333334d;padding: 10px 20px 6px 20px;border-radius: 27px;border: 1px solid #f2f2f2;}
+   */
+a.main_cta {
+  background: white;
+  padding: 13px 24px;
+  border-radius: 7px;
+  color: #1b3773;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 16px;
+}
+
+.main_mkt_area p {
+  color: #0d679a;
+}
+
+.secondary_mkt_areas {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  margin-top: 22px;
+}
+
+.mkt.mkt_online_purchase {
+  background-image: url("/img/condos.com_03.jpg");
+  background-size: cover;
+  /* min-height: 400px; */
+}
+
+.mkt.mkt_online_purchase img {
+  position: absolute;
+  right: 20px;
+}
+
+.mkt.mkt_cash_rebates img {
+  /* position: absolute; */
+  right: 20px;
+}
+
+.mkt.mkt_investor_tools img {
+  position: absolute;
+  right: 20px;
+}
+
+.mkt.mkt_cash_rebates img {
+  /* position: absolute;
+    right: 20px; */
+}
+
+.mkt.mkt_cash_rebates {
+  background-image: url("/img/rebate_background@2x.jpg");
+  background-size: cover;
+}
+
+.mkt.mkt_investor_tools {
+  background-image: url("/img/investor_background.jpg");
+  background-size: cover;
+}
+
+.mkt.mkt_cash_rebates img {
+  margin-bottom: 25px;
+}
+
+.mkt {
+  flex-basis: 31%;
+  background: #55b6e9;
+  height: 278px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 12px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* margin-bottom: 41px; */
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.mkt h4 {
+  padding: 0;
+  margin: 0;
+  background: #33333396;
+  display: inline-block !important;
+  width: auto !important;
+  align-self: self-end;
+  padding: 6px 20px 4px 20px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-size: 1rem;
+}
+
+.mkt h3 {
+  line-height: 1.2;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.9rem;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.bottom_cta_area {
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+  justify-content: space-evenly;
+}
+
+.condo_referral_area {
+  flex-basis: 40%;
+}
+
+.condo_referral_text {
+  /* flex-basis: 31%; */
+}
+
+.developer_referral_text {
+  /* flex-basis: 31%; */
+}
+
+.condo_referral_area {
+  display: flex;
+}
+
+.condo_referral_area img {
+  /* height: auto !important; */ /* height: 62px !important; */
+  margin-right: 20px;
+}
+
+.condo_referral_text h5 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.condo_referral_text p {
+}
+
+.developer_referral_text h5 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.developer_referral_text p {
+  margin: 0;
+}
+
+.developer_referral_text a,
+.condo_referral_text a {
+  margin-top: 8px;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #0053b5;
+  border-bottom: 1px solid #afafaf;
+}
+
+.condo_referral_text h5 {
+}
+
+.condo_referral_text p {
+  margin: 0;
+}
+
+.footer {
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #9a9a9a;
+}
 
 div#mailChimpModal #mc_embed_signup h2 {
-    font-family: canada-type-gibson,sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 2.7rem;
-    line-height: 1.2;
-    text-align: left;
-    color: #006da6;
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.7rem;
+  line-height: 1.2;
+  text-align: left;
+  color: #006da6;
+}
+
+div#mailChimpModal #mc_embed_signup h2 {
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.7rem;
+  line-height: 1.2;
+  text-align: left;
+  color: #006da6;
 }
 
 div#mailChimpModal #mc_embed_signup .mc-field-group {
-    padding-bottom: 7px;
-    font-family: canada-type-gibson, sans-serif;
-    font-size: 1.1rem;
+  padding-bottom: 7px;
+  font-family: canada-type-gibson, sans-serif;
+  font-size: 1.1rem;
 }
 
-div#mailChimpModal #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
-    margin-bottom: 0;
+div#mailChimpModal
+  #mc_embed_signup
+  #mc-embedded-subscribe-form
+  div.mce_inline_error {
+  margin-bottom: 0;
 }
 
 div#mailChimpModal #mc_embed_signup .button {
-    background: #049a06;
-    font-size: 1.1rem;
-    padding: 4px 24px;
-    height: auto;
-    margin-top: 18px;
+  background: #049a06;
+  font-size: 1.1rem;
+  padding: 4px 24px;
+  height: auto;
+  margin-top: 18px;
 }
 
 div#mailChimpModal #mc_embed_signup .button:hover {
-    background: #038505;
+  background: #038505;
 }
 
 div#mailChimpModal #mc_embed_signup div.response {
-  font-family: canada-type-gibson,sans-serif;
+  font-family: canada-type-gibson, sans-serif;
   font-weight: 500;
   font-style: italic;
   font-size: 2.6rem;
   line-height: 1.2;
   text-align: center;
 }
-  
-  .footer a {
-    margin-left: 9px;
-    color: #333;
-  }
-  /* ==========================================================================
+
+.footer a {
+  margin-left: 9px;
+  color: #333;
+}
+/* ==========================================================================
      Helper classes
      ========================================================================== */
-  
-  /*
+
+/*
    * Hide visually and from screen readers
    */
-  
-  .hidden,
-  [hidden] {
-    display: none !important;
-  }
-  
-  /*
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
    * Hide only visually, but have it available for screen readers:
    * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
    *
@@ -411,46 +413,46 @@ div#mailChimpModal #mc_embed_signup div.response {
    *    causes content to wrap 1 word per line:
    *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
    */
-  
-  .sr-only {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    /* 1 */
-  }
-  
-  /*
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
    * Extends the .sr-only class to allow the element
    * to be focusable when navigated to via the keyboard:
    * https://www.drupal.org/node/897638
    */
-  
-  .sr-only.focusable:active,
-  .sr-only.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    white-space: inherit;
-    width: auto;
-  }
-  
-  /*
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
    * Hide visually and from screen readers, but maintain layout
    */
-  
-  .invisible {
-    visibility: hidden;
-  }
-  
-  /*
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
    * Clearfix: contain floats
    *
    * For modern browsers
@@ -461,16 +463,16 @@ div#mailChimpModal #mc_embed_signup div.response {
    * 2. The use of `table` rather than `block` is only necessary if using
    *    `:before` to contain the top-margins of child elements.
    */
-  
-  .clearfix::before,
-  .clearfix::after {
-    content: " ";
-    display: table;
-  }
-  
-  .clearfix::after {
-    clear: both;
-  }
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -482,214 +484,209 @@ div#mailChimpModal #mc_embed_signup div.response {
   /* Style adjustments for viewports that meet the condition */
 }
 
-@media screen and (max-width:1600px){
+@media screen and (max-width: 1600px) {
   .main_mkt_area {
-    min-height:600px;
+    min-height: 600px;
   }
 }
 
+@media screen and (max-width: 1383px) {
+  h1 {
+  }
 
+  .mkt h3 {
+    font-size: 1.6rem;
+  }
 
-@media screen and (max-width:1383px){
+  .mkt h4 {
+    font-size: 0.9rem;
+    padding: 3px 12px;
+  }
 
-
-    h1 {}
-
-    .mkt h3 {
-        font-size: 1.6rem;
-    }
-
-    .mkt h4 {
-        font-size: 0.9rem;
-        padding: 3px 12px;
-    }
-
-    .mkt {
-        padding: 12px 20px;
-    }
-
+  .mkt {
+    padding: 12px 20px;
+  }
 }
 
+@media screen and (max-width: 1225px) {
+  .mkt h3 {
+    font-size: 1.6rem;
+  }
 
-@media screen and (max-width: 1225px){
-    .mkt h3 {
-        font-size: 1.6rem;
-    }
+  .mkt h4 {
+    font-size: 0.9rem;
+    padding: 3px 12px;
+  }
 
-    .mkt h4 {
-        font-size: 0.9rem;
-        padding: 3px 12px;
-    }
+  .mkt {
+    padding: 12px 20px;
+    /* height: 400px; */
+  }
 
-    .mkt {
-        padding: 12px 20px;
-        /* height: 400px; */
-    }
+  .main_mkt_area {
+    min-height: 480px;
+  }
 
-    .main_mkt_area {
-        min-height: 480px;
-    }
-
-    .main_mkt_area h1 {
-        font-size: 2.6rem;
-    }
+  .main_mkt_area h1 {
+    font-size: 2.6rem;
+  }
 }
 
+@media screen and (max-width: 1024px) {
+  .mkt h3 {
+    font-size: 1.9rem;
+  }
 
+  .mkt h4 {
+    font-size: 0.9rem;
+    padding: 3px 12px;
+  }
 
+  .mkt {
+    padding: 12px 20px;
+    margin-bottom: 12px;
+  }
 
-@media screen and (max-width: 1024px){
-
-    .mkt h3 {
-        font-size: 1.9rem;
-    }
-
-    .mkt h4 {
-        font-size: 0.9rem;
-        padding: 3px 12px;
-    }
-
-    .mkt {
-        padding: 12px 20px;
-        margin-bottom: 12px;
-    }
-
-    .mkt.mkt_online_purchase {
+  .mkt.mkt_online_purchase {
     flex-basis: 48%;
     height: 278px;
-    }
+  }
 
-    .mkt.mkt_cash_rebates {
-        flex-basis:48%;
-        height: 278px;
-    }
+  .mkt.mkt_cash_rebates {
+    flex-basis: 48%;
+    height: 278px;
+  }
 
-    .secondary_mkt_areas {
-        flex-wrap: wrap;
-    }
+  .secondary_mkt_areas {
+    flex-wrap: wrap;
+  }
 
-    .mkt.mkt_investor_tools {
-        flex-basis: 97%;
-        height: 278px;
-        background-position-y: bottom;
-    }
+  .mkt.mkt_investor_tools {
+    flex-basis: 97%;
+    height: 278px;
+    background-position-y: bottom;
+  }
 
-    .bottom_cta_area {
-        flex-direction: column;
-        align-items: center;
-        justify-content: initial;
-    }
+  .bottom_cta_area {
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+  }
 
-    .bottom_cta_area .condo_referral_area {
-        max-width: 72%;
-        margin-bottom: 25px;
-        width: 100%;
-    }
+  .bottom_cta_area .condo_referral_area {
+    max-width: 72%;
+    margin-bottom: 25px;
+    width: 100%;
+  }
 
-    .bottom_cta_area .condo_referral_area .condo_referral_text, .bottom_cta_area .condo_referral_area .developer_referral_text {
-        flex-basis: 70%;
-        min-width: 70%;
-        flex-grow: 1;
-        max-width: 330px;
-    }
+  .bottom_cta_area .condo_referral_area .condo_referral_text,
+  .bottom_cta_area .condo_referral_area .developer_referral_text {
+    flex-basis: 70%;
+    min-width: 70%;
+    flex-grow: 1;
+    max-width: 330px;
+  }
 
-    .referral_image {
+  .referral_image {
     min-width: 250px;
     text-align: center;
-}
-}
-
-@media screen and (max-width: 650px){
-
-
-.top_right_nav {
-    display:none;
+  }
 }
 
+@media screen and (max-width: 650px) {
+  .top_right_nav {
+    display: none;
+  }
 }
 
-
-
-
-
-@media only screen and (max-width:800px){
+@media only screen and (max-width: 800px) {
   .main_mkt_area h1 {
     font-size: 2.1rem;
     line-height: 1.1;
     max-width: 88%;
-}
+  }
 
-a.main_cta {
+  a.main_cta {
     padding: 13px;
     font-size: 1.1rem;
-}
+  }
 
-.main_mkt_area {justify-content: end;padding-top: 90px;background-position-x: 70%;background-size: auto 100%;min-height: 400px;background-position-y: top;}
+  .main_mkt_area {
+    justify-content: end;
+    padding-top: 90px;
+    background-position-x: 70%;
+    background-size: auto 100%;
+    min-height: 400px;
+    background-position-y: top;
+  }
 
-.main_mkt_area h1 br {
+  .main_mkt_area h1 br {
     display: none;
-}
+  }
 
-img.condos_logo {
+  img.condos_logo {
     /* max-width: 228px; */
-}
+  }
 
-.secondary_mkt_areas {
+  .secondary_mkt_areas {
     flex-flow: column;
     display: block;
     padding-left: 10px;
     padding-right: 10px;
-}
+  }
 
-.bottom_cta_area {
+  .bottom_cta_area {
     flex-flow: column;
     padding-left: 10px;
     padding-right: 10px;
-}
+  }
 
-.condo_referral_area {
+  .condo_referral_area {
     flex-flow: column;
     text-align: center;
     align-items: center;
     margin-bottom: 40px;
-}
+  }
 
-.condo_referral_area img {
+  .condo_referral_area img {
     margin-bottom: 20px;
     margin-right: 0;
     height: auto !important;
-}
+  }
 
-.mkt.mkt_online_purchase img {/* bottom: 16px; */right: 10%;top: 10%;}
+  .mkt.mkt_online_purchase img {
+    /* bottom: 16px; */
+    right: 10%;
+    top: 10%;
+  }
 
-.mkt {height: auto;min-height: 278px;}
+  .mkt {
+    height: auto;
+    min-height: 278px;
+  }
 
-.mkt.mkt_online_purchase {
+  .mkt.mkt_online_purchase {
     /* justify-content: flex-start; */
     padding-top: 48px;
     min-height: 428px;
     /* background-position-x: 50%; */
-}
+  }
 
-.mkt.mkt_investor_tools {
+  .mkt.mkt_investor_tools {
     min-height: 435px;
-}
+  }
 
-.mkt.mkt_investor_tools img {
+  .mkt.mkt_investor_tools img {
     top: 10%;
     right: 10%;
-}
-}
-
-
-@media screen and (max-width:650px){
-
-img.condos_logo {
-  max-width: 220px;
-}
+  }
 }
 
-
+@media screen and (max-width: 650px) {
+  img.condos_logo {
+    max-width: 220px;
+  }
+}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
@@ -772,4 +769,3 @@ img.condos_logo {
     page-break-after: avoid;
   }
 }
-
